@@ -9531,6 +9531,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="P_RED" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 <part name="H1" library="LilyPad-Wearables" deviceset="SEW_HOLE" device=""/>
 <part name="TPGND" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="TPTX" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="TPRX" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 </parts>
 <sheets>
 <sheet>
@@ -9625,6 +9627,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="P_RED" gate="G$1" x="-78.74" y="-33.02"/>
 <instance part="H1" gate="G$1" x="-149.86" y="45.72" rot="R180"/>
 <instance part="TPGND" gate="G$1" x="-119.38" y="45.72"/>
+<instance part="TPTX" gate="G$1" x="-78.74" y="-43.18"/>
+<instance part="TPRX" gate="G$1" x="-78.74" y="-53.34"/>
 </instances>
 <busses>
 </busses>
@@ -10218,9 +10222,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="22.86" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MPU" gate="G$1" pin="RXD"/>
-<wire x1="129.54" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
-<label x="119.38" y="66.04" size="1.778" layer="95"/>
+<pinref part="MPU" gate="G$1" pin="GPIO4"/>
+<wire x1="116.84" y1="63.5" x2="129.54" y2="63.5" width="0.1524" layer="91"/>
+<label x="119.38" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -10273,25 +10277,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="76.2" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$29" class="0">
+<net name="RESET" class="0">
 <segment>
 <pinref part="MPU" gate="G$1" pin="REST"/>
 <wire x1="73.66" y1="68.58" x2="86.36" y2="68.58" width="0.1524" layer="91"/>
 <label x="76.2" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RESET" class="0">
-<segment>
-<pinref part="MPU" gate="G$1" pin="TXD"/>
-<wire x1="116.84" y1="68.58" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
-<label x="119.38" y="68.58" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="MPU" gate="G$1" pin="GPIO4"/>
-<wire x1="116.84" y1="63.5" x2="129.54" y2="63.5" width="0.1524" layer="91"/>
-<label x="119.38" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -10320,6 +10310,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="MPU" gate="G$1" pin="GPIO5"/>
 <wire x1="116.84" y1="60.96" x2="129.54" y2="60.96" width="0.1524" layer="91"/>
 <label x="119.38" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="TXD" class="0">
+<segment>
+<pinref part="MPU" gate="G$1" pin="TXD"/>
+<wire x1="116.84" y1="68.58" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
+<label x="119.38" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-104.14" y1="-43.18" x2="-78.74" y2="-43.18" width="0.1524" layer="91"/>
+<label x="-99.06" y="-43.18" size="1.778" layer="95"/>
+<pinref part="TPTX" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="RXD" class="0">
+<segment>
+<pinref part="MPU" gate="G$1" pin="RXD"/>
+<wire x1="129.54" y1="66.04" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
+<label x="119.38" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-78.74" y1="-53.34" x2="-104.14" y2="-53.34" width="0.1524" layer="91"/>
+<label x="-99.06" y="-53.34" size="1.778" layer="95"/>
+<pinref part="TPRX" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
