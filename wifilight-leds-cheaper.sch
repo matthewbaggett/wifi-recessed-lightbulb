@@ -523,6 +523,22 @@ chip</description>
 <text x="-7" y="7.5" size="0.8128" layer="21" font="vector" ratio="15">&gt;NAME</text>
 <text x="-7" y="-8.5" size="0.8128" layer="21" font="vector" ratio="15">&gt;VALUE</text>
 </package>
+<package name="PAD.02X.02">
+<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
+</package>
+<package name="PAD.03X.03">
+<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.05">
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.04">
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="TP_15TH">
+<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
+<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -538,6 +554,13 @@ chip</description>
 <text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="0" y="7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-7.62" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="TEST-POINT">
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;Name</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;Value</text>
+<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -817,6 +840,54 @@ SDR0403-560KL - 56uH, 10%, 500mA RMS/740mA peak</description>
 <attribute name="PROD_ID" value="NDUC-12529" constant="no"/>
 <attribute name="VALUE" value="27uH" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST-POINT" prefix="TP">
+<description>Bare copper test points for troubleshooting or ICT</description>
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2" package="PAD.02X.02">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3" package="PAD.03X.03">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X5" package="PAD.03X.05">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X4" package="PAD.03X.04">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TP_15TH_THRU" package="TP_15TH">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -9408,6 +9479,15 @@ Source: AVX .. aphvc.pdf</description>
 <part name="Q3" library="nxp_60" deviceset="BUK98180-100A" device=""/>
 <part name="Q1" library="nxp_60" deviceset="BUK98180-100A" device=""/>
 <part name="Q2" library="nxp_60" deviceset="BUK98180-100A" device=""/>
+<part name="TP12V" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP5V" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="TP3.3V" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="SCL" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="SDA" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="WHITE" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="RED" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="P_WHITE" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="P_RED" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 </parts>
 <sheets>
 <sheet>
@@ -9491,6 +9571,15 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="Q3" gate="G$1" x="177.8" y="22.86" rot="MR180"/>
 <instance part="Q1" gate="G$1" x="177.8" y="38.1"/>
 <instance part="Q2" gate="G$1" x="198.12" y="38.1" rot="MR0"/>
+<instance part="TP12V" gate="G$1" x="-78.74" y="48.26"/>
+<instance part="TP5V" gate="G$1" x="-78.74" y="38.1"/>
+<instance part="TP3.3V" gate="G$1" x="-78.74" y="27.94"/>
+<instance part="SCL" gate="G$1" x="-78.74" y="17.78"/>
+<instance part="SDA" gate="G$1" x="-78.74" y="7.62"/>
+<instance part="WHITE" gate="G$1" x="-78.74" y="-2.54"/>
+<instance part="RED" gate="G$1" x="-78.74" y="-12.7"/>
+<instance part="P_WHITE" gate="G$1" x="-78.74" y="-22.86"/>
+<instance part="P_RED" gate="G$1" x="-78.74" y="-33.02"/>
 </instances>
 <busses>
 </busses>
@@ -9644,6 +9733,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="73.66" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
 <label x="76.2" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-78.74" y1="17.78" x2="-104.14" y2="17.78" width="0.1524" layer="91"/>
+<label x="-99.06" y="17.78" size="1.778" layer="95"/>
+<pinref part="SCL" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="SDA" class="0">
 <segment>
@@ -9666,6 +9760,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="86.36" y1="55.88" x2="73.66" y2="55.88" width="0.1524" layer="91"/>
 <label x="76.2" y="55.88" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-104.14" y1="7.62" x2="-78.74" y2="7.62" width="0.1524" layer="91"/>
+<label x="-99.06" y="7.62" size="1.778" layer="95"/>
+<pinref part="SDA" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="P_RED" class="0">
 <segment>
@@ -9677,6 +9776,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="180.34" y1="17.78" x2="180.34" y2="2.54" width="0.1524" layer="91"/>
 <label x="180.34" y="5.08" size="1.778" layer="95" rot="R90"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
+</segment>
+<segment>
+<wire x1="-104.14" y1="-33.02" x2="-78.74" y2="-33.02" width="0.1524" layer="91"/>
+<label x="-99.06" y="-33.02" size="1.778" layer="95"/>
+<pinref part="P_RED" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="P_BLUE" class="0">
@@ -9714,6 +9818,11 @@ Source: AVX .. aphvc.pdf</description>
 <label x="180.34" y="45.72" size="1.778" layer="95" rot="R90"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
 </segment>
+<segment>
+<wire x1="-78.74" y1="-22.86" x2="-104.14" y2="-22.86" width="0.1524" layer="91"/>
+<label x="-99.06" y="-22.86" size="1.778" layer="95"/>
+<pinref part="P_WHITE" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="GREEN" class="0">
 <segment>
@@ -9738,6 +9847,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="162.56" y1="-38.1" x2="180.34" y2="-38.1" width="0.1524" layer="91"/>
 <label x="165.1" y="-38.1" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-104.14" y1="-12.7" x2="-78.74" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-99.06" y="-12.7" size="1.778" layer="95"/>
+<pinref part="RED" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="BLUE" class="0">
 <segment>
@@ -9761,6 +9875,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="U2" gate="G$1" pin="PWM0"/>
 <wire x1="162.56" y1="-33.02" x2="180.34" y2="-33.02" width="0.1524" layer="91"/>
 <label x="165.1" y="-33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-78.74" y1="-2.54" x2="-104.14" y2="-2.54" width="0.1524" layer="91"/>
+<label x="-99.06" y="-2.54" size="1.778" layer="95"/>
+<pinref part="WHITE" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -9842,6 +9961,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-116.84" y1="162.56" x2="-116.84" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="SUPPLY19" gate="G$1" pin="12V"/>
 <pinref part="B2" gate="G$1" pin="+"/>
+</segment>
+<segment>
+<wire x1="-104.14" y1="48.26" x2="-78.74" y2="48.26" width="0.1524" layer="91"/>
+<label x="-99.06" y="48.26" size="1.778" layer="95"/>
+<pinref part="TP12V" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -9928,6 +10052,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="86.36" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
 <label x="76.2" y="50.8" size="1.778" layer="95"/>
 </segment>
+<segment>
+<wire x1="-104.14" y1="27.94" x2="-78.74" y2="27.94" width="0.1524" layer="91"/>
+<label x="-99.06" y="27.94" size="1.778" layer="95"/>
+<pinref part="TP3.3V" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="N$13" class="0">
 <segment>
@@ -9996,6 +10125,11 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-165.1" y1="109.22" x2="-165.1" y2="106.68" width="0.1524" layer="91"/>
 <junction x="-154.94" y="109.22"/>
 <junction x="-165.1" y="109.22"/>
+</segment>
+<segment>
+<wire x1="-78.74" y1="38.1" x2="-104.14" y2="38.1" width="0.1524" layer="91"/>
+<label x="-99.06" y="38.1" size="1.778" layer="95"/>
+<pinref part="TP5V" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="COMP" class="0">
