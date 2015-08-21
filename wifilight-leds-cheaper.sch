@@ -9534,6 +9534,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="TPTX" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 <part name="TPRX" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 <part name="TPGPIO0" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="TPCHPD" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="TPGPIO2" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 </parts>
 <sheets>
 <sheet>
@@ -9631,6 +9633,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="TPTX" gate="G$1" x="-78.74" y="-43.18"/>
 <instance part="TPRX" gate="G$1" x="-78.74" y="-53.34"/>
 <instance part="TPGPIO0" gate="G$1" x="-78.74" y="-63.5"/>
+<instance part="TPCHPD" gate="G$1" x="-78.74" y="-73.66"/>
+<instance part="TPGPIO2" gate="G$1" x="-78.74" y="-83.82"/>
 </instances>
 <busses>
 </busses>
@@ -10265,11 +10269,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="76.2" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="CH_PD" class="0">
 <segment>
 <pinref part="MPU" gate="G$1" pin="CH_PD"/>
 <wire x1="73.66" y1="63.5" x2="86.36" y2="63.5" width="0.1524" layer="91"/>
 <label x="76.2" y="63.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-78.74" y1="-73.66" x2="-104.14" y2="-73.66" width="0.1524" layer="91"/>
+<label x="-99.06" y="-73.66" size="1.778" layer="95"/>
+<pinref part="TPCHPD" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -10298,11 +10307,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="TPGPIO0" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="GPIO2" class="0">
 <segment>
 <pinref part="MPU" gate="G$1" pin="GPIO2"/>
 <wire x1="116.84" y1="55.88" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
 <label x="119.38" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-78.74" y1="-83.82" x2="-104.14" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-99.06" y="-83.82" size="1.778" layer="95"/>
+<pinref part="TPGPIO2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$36" class="0">
