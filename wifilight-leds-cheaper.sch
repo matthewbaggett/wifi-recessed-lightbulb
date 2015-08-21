@@ -9398,6 +9398,47 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="LilyPad-Wearables">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find all manner of sewable boards, textile footprints, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt;Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SIMPLE_HOLE">
+<pad name="P$1" x="0" y="0" drill="2.54" diameter="3.048"/>
+<text x="1.905" y="-0.127" size="0.4064" layer="25">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="SIMPLE_HOLE">
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="-5.08" y="0" visible="off" length="short"/>
+<text x="-2.54" y="-4.318" size="1.27" layer="94">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SEW_HOLE" prefix="H">
+<description>Simple sew-hole&lt;br&gt;
+.1" diameter hole with 20mil annular ring</description>
+<gates>
+<gate name="G$1" symbol="SIMPLE_HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SIMPLE_HOLE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9488,6 +9529,8 @@ Source: AVX .. aphvc.pdf</description>
 <part name="RED" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 <part name="P_WHITE" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 <part name="P_RED" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
+<part name="H1" library="LilyPad-Wearables" deviceset="SEW_HOLE" device=""/>
+<part name="TPGND" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 </parts>
 <sheets>
 <sheet>
@@ -9580,6 +9623,8 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="RED" gate="G$1" x="-78.74" y="-12.7"/>
 <instance part="P_WHITE" gate="G$1" x="-78.74" y="-22.86"/>
 <instance part="P_RED" gate="G$1" x="-78.74" y="-33.02"/>
+<instance part="H1" gate="G$1" x="-149.86" y="45.72" rot="R180"/>
+<instance part="TPGND" gate="G$1" x="-119.38" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -9710,6 +9755,11 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="MPU" gate="G$1" pin="GND"/>
 <wire x1="116.84" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="91"/>
 <label x="119.38" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-144.78" y1="45.72" x2="-119.38" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="TPGND" gate="G$1" pin="1"/>
+<pinref part="H1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="SCL" class="0">
