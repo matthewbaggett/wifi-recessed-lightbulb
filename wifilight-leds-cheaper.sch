@@ -9363,9 +9363,9 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="REG1" library="adafruit" deviceset="MC33063/MC34063" device="D"/>
 <part name="REG2" library="linear" deviceset="MC33269-SO8" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="R0805" value="220 ???"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="R0805" value="220"/>
 <part name="PWR" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="R0805" value="???"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="R0805" value="1k?"/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -9395,7 +9395,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY16" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="THINKING" library="led" deviceset="LED" device="CHIP-LED0805"/>
-<part name="R7" library="resistor" deviceset="R-EU_" device="R0805" value="???"/>
+<part name="R7" library="resistor" deviceset="R-EU_" device="R0805" value="1k?"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="A" library="adafruit" deviceset="PINHD-1X1" device=""/>
 <part name="B" library="adafruit" deviceset="PINHD-1X1" device=""/>
@@ -9474,7 +9474,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="TEMPERATURE" gate="G$1" x="88.9" y="127"/>
 <instance part="SUPPLY15" gate="G$1" x="63.5" y="132.08"/>
 <instance part="GND10" gate="1" x="66.04" y="109.22"/>
-<instance part="C4" gate="G$1" x="53.34" y="119.38"/>
+<instance part="C4" gate="G$1" x="53.34" y="121.92"/>
 <instance part="SUPPLY16" gate="G$1" x="45.72" y="152.4"/>
 <instance part="SUPPLY17" gate="G$1" x="17.78" y="175.26"/>
 <instance part="THINKING" gate="G$1" x="17.78" y="104.14"/>
@@ -9504,6 +9504,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="66.04" y1="124.46" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="66.04" y1="114.3" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="116.84" x2="53.34" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
 <junction x="66.04" y="114.3"/>
 </segment>
@@ -10016,7 +10017,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="TEMPERATURE" gate="G$1" pin="CAP"/>
 <wire x1="76.2" y1="127" x2="53.34" y2="127" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="127" x2="53.34" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="127" x2="53.34" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">

@@ -1904,9 +1904,9 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C2" library="resistor" package="C0805K" value="0.1uF" x="37.465" y="32.7025" rot="R90"/>
 <element name="REG1" library="adafruit" package="SO08" value="MC33063/MC34063D" x="12.7" y="18.89125" rot="R270"/>
 <element name="REG2" library="linear" package="SO08" value="MC33269-SO8" x="12.7" y="25.0825" rot="R270"/>
-<element name="R1" library="resistor" package="R0805" value="220 ???" x="17.78" y="18.89125" rot="R90"/>
+<element name="R1" library="resistor" package="R0805" value="220" x="17.78" y="18.89125" rot="R90"/>
 <element name="PWR" library="led" package="CHIP-LED0805" value="" x="25.4" y="49.37125" rot="R270"/>
-<element name="R2" library="resistor" package="R0805" value="???" x="17.145" y="47.14875" rot="MR180"/>
+<element name="R2" library="resistor" package="R0805" value="1k?" x="17.145" y="47.14875" rot="MR180"/>
 <element name="C3" library="resistor" package="C0805K" value="220pf" x="7.46125" y="16.98625" rot="R270"/>
 <element name="D1" library="diode" package="SMB" value="MBRS140T3" x="6.50875" y="22.38375" rot="R90"/>
 <element name="L1" library="SparkFun-Passives" package="SDR0403" value="220uf" x="8.09625" y="20.6375" rot="MR0">
@@ -1923,7 +1923,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="TEMPERATURE" library="SparkFun-Sensors" package="LGA8" value="MPL3115A2LGA8" x="34.76625" y="23.1775" rot="MR270"/>
 <element name="C4" library="resistor" package="C0805K" value="0.1uF" x="30.95625" y="24.4475" rot="MR90"/>
 <element name="THINKING" library="led" package="CHIP-LED0805" value="" x="37.465" y="41.11625"/>
-<element name="R7" library="resistor" package="R0805" value="???" x="37.465" y="36.98875" rot="R90"/>
+<element name="R7" library="resistor" package="R0805" value="1k?" x="37.465" y="36.98875" rot="R90"/>
 <element name="A" library="adafruit" package="1X01" value="" x="22.733" y="25.4"/>
 <element name="B" library="adafruit" package="1X01" value="" x="28.067" y="25.4"/>
 <element name="B2" library="rectifier" package="DBS" value="DBLS203G" x="25.4" y="18.415"/>
