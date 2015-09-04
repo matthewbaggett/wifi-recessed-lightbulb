@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="16" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,19 +39,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -1615,6 +1615,28 @@ Source: http://www.ledtronics.com/ds/smd-0603/Dstr0092.pdf</description>
 <rectangle x1="-0.4" y1="0.175" x2="0" y2="0.4" layer="51"/>
 <rectangle x1="-0.25" y1="0.175" x2="0" y2="0.4" layer="21"/>
 </package>
+<package name="CREE_XLAMP">
+<description>&lt;b&gt;Cree® XLamp® XP-E LEDs&lt;/b&gt;&lt;p&gt;
+Source: www.cree.com/xlamp .. XLampXP-E.pdf</description>
+<wire x1="-1.65" y1="1.625" x2="1.625" y2="1.625" width="0.2032" layer="51"/>
+<wire x1="1.625" y1="1.625" x2="1.625" y2="-1.625" width="0.2032" layer="51"/>
+<wire x1="1.625" y1="-1.625" x2="-1.65" y2="-1.625" width="0.2032" layer="51"/>
+<wire x1="-1.65" y1="-1.625" x2="-1.65" y2="1.625" width="0.2032" layer="51"/>
+<wire x1="-1.525" y1="0" x2="-1.15" y2="0" width="0.1016" layer="51"/>
+<wire x1="-1.325" y1="0.175" x2="-1.325" y2="-0.175" width="0.1016" layer="51"/>
+<circle x="-1.25" y="-1.175" radius="0.225" width="0" layer="51"/>
+<circle x="0" y="0" radius="1.25" width="0.2032" layer="51"/>
+<smd name="A" x="-1.4" y="0" dx="0.5" dy="3.3" layer="1" cream="no"/>
+<smd name="C" x="1.4" y="0" dx="0.5" dy="3.3" layer="1" cream="no"/>
+<smd name="X" x="0" y="0" dx="1.3" dy="3.3" layer="1" cream="no"/>
+<smd name="A@1" x="-1.825" y="0" dx="0.45" dy="0.5" layer="1" cream="no"/>
+<smd name="C@1" x="1.825" y="0" dx="0.45" dy="0.5" layer="1" cream="no"/>
+<rectangle x1="-0.6" y1="-1.6" x2="0.6" y2="1.6" layer="31"/>
+<rectangle x1="-1.6" y1="-1.575" x2="-1.2" y2="1.6" layer="31"/>
+<rectangle x1="-2" y1="-0.2" x2="-1.575" y2="0.2" layer="31"/>
+<rectangle x1="1.2" y1="-1.6" x2="1.6" y2="1.575" layer="31" rot="R180"/>
+<rectangle x1="1.575" y1="-0.2" x2="2" y2="0.2" layer="31" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -2055,6 +2077,39 @@ Source: www.kingbright.com</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XPEWHT-" prefix="LED">
+<description>&lt;b&gt;Cree® XLamp® XP-E LEDs&lt;/b&gt;&lt;p&gt;
+Source: www.cree.com/xlamp .. XLampXP-E.pdf</description>
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0.3175" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="CREE_XLAMP">
+<connects>
+<connect gate="G$1" pin="A" pad="A A@1"/>
+<connect gate="G$1" pin="C" pad="C C@1"/>
+</connects>
+<technologies>
+<technology name="01-0000-00BC2"/>
+<technology name="01-0000-00CC2"/>
+<technology name="01-0000-00DC2"/>
+<technology name="01-0000-00EC2"/>
+<technology name="L1-0000-007E7"/>
+<technology name="L1-0000-008E7"/>
+<technology name="L1-0000-009E4"/>
+<technology name="L1-0000-009E7"/>
+<technology name="L1-0000-00AE4"/>
+<technology name="L1-0000-00AE7"/>
+<technology name="L1-0000-00B01"/>
+<technology name="L1-0000-00BE4"/>
+<technology name="L1-0000-00C01"/>
+<technology name="L1-0000-00CE4"/>
+<technology name="L1-0000-00D01"/>
+<technology name="L1-0000-00E01"/>
 </technologies>
 </device>
 </devices>
@@ -8960,19 +9015,19 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <part name="TPGPIO0" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 <part name="TPCHPD" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
 <part name="TPGPIO2" library="SparkFun-Passives" deviceset="TEST-POINT" device="3X5"/>
-<part name="GL1" library="SparkFun-LED" deviceset="LUXEON-REBEL" device=""/>
-<part name="GL2" library="SparkFun-LED" deviceset="LUXEON-REBEL" device=""/>
-<part name="GL3" library="SparkFun-LED" deviceset="LUXEON-REBEL" device=""/>
-<part name="RL1" library="SparkFun-LED" deviceset="LUXEON-REBEL" device=""/>
-<part name="RL2" library="SparkFun-LED" deviceset="LUXEON-REBEL" device=""/>
-<part name="RL3" library="SparkFun-LED" deviceset="LUXEON-REBEL" device=""/>
-<part name="BL1" library="SparkFun-LED" deviceset="LUXEON-REBEL" device=""/>
-<part name="BL2" library="SparkFun-LED" deviceset="LUXEON-REBEL" device=""/>
-<part name="BL3" library="SparkFun-LED" deviceset="LUXEON-REBEL" device=""/>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="JP2" library="SparkFun-Connectors" deviceset="M05X2" device="SHD_LOCK"/>
+<part name="LG1" library="led" deviceset="XPEWHT-" device="" technology="01-0000-00BC2"/>
+<part name="LG2" library="led" deviceset="XPEWHT-" device="" technology="01-0000-00BC2"/>
+<part name="LG3" library="led" deviceset="XPEWHT-" device="" technology="01-0000-00BC2"/>
+<part name="LR3" library="led" deviceset="XPEWHT-" device="" technology="01-0000-00BC2"/>
+<part name="LR2" library="led" deviceset="XPEWHT-" device="" technology="01-0000-00BC2"/>
+<part name="LR1" library="led" deviceset="XPEWHT-" device="" technology="01-0000-00BC2"/>
+<part name="LB1" library="led" deviceset="XPEWHT-" device="" technology="01-0000-00BC2"/>
+<part name="LB2" library="led" deviceset="XPEWHT-" device="" technology="01-0000-00BC2"/>
+<part name="LB3" library="led" deviceset="XPEWHT-" device="" technology="01-0000-00BC2"/>
 </parts>
 <sheets>
 <sheet>
@@ -9040,19 +9095,38 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <instance part="TPGPIO0" gate="G$1" x="-78.74" y="-63.5"/>
 <instance part="TPCHPD" gate="G$1" x="-78.74" y="-73.66"/>
 <instance part="TPGPIO2" gate="G$1" x="-78.74" y="-83.82"/>
-<instance part="GL1" gate="G$1" x="220.98" y="-58.42"/>
-<instance part="GL2" gate="G$1" x="220.98" y="-40.64"/>
-<instance part="GL3" gate="G$1" x="220.98" y="-22.86"/>
-<instance part="RL1" gate="G$1" x="243.84" y="-58.42"/>
-<instance part="RL2" gate="G$1" x="243.84" y="-40.64"/>
-<instance part="RL3" gate="G$1" x="243.84" y="-22.86"/>
-<instance part="BL1" gate="G$1" x="266.7" y="-58.42"/>
-<instance part="BL2" gate="G$1" x="266.7" y="-40.64"/>
-<instance part="BL3" gate="G$1" x="266.7" y="-22.86"/>
 <instance part="GND18" gate="1" x="210.82" y="-66.04"/>
 <instance part="GND19" gate="1" x="233.68" y="-66.04"/>
 <instance part="GND20" gate="1" x="256.54" y="-66.04"/>
 <instance part="JP2" gate="G$1" x="15.24" y="-17.78"/>
+<instance part="LG1" gate="G$1" x="223.52" y="-58.1025" smashed="yes">
+<attribute name="NAME" x="227.076" y="-62.6745" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="LG2" gate="G$1" x="223.52" y="-40.3225" smashed="yes">
+<attribute name="NAME" x="227.076" y="-47.4345" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="LG3" gate="G$1" x="223.52" y="-22.5425" smashed="yes">
+<attribute name="NAME" x="227.076" y="-29.6545" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="241.935" y="-11.8745" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="LR3" gate="G$1" x="246.38" y="-22.5425" smashed="yes">
+<attribute name="NAME" x="249.936" y="-27.1145" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="LR2" gate="G$1" x="246.38" y="-40.3225" smashed="yes">
+<attribute name="NAME" x="249.936" y="-44.8945" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="LR1" gate="G$1" x="246.38" y="-58.1025" smashed="yes">
+<attribute name="NAME" x="249.936" y="-62.6745" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="LB1" gate="G$1" x="269.24" y="-58.1025" smashed="yes">
+<attribute name="NAME" x="272.796" y="-62.6745" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="LB2" gate="G$1" x="269.24" y="-40.3225" smashed="yes">
+<attribute name="NAME" x="272.796" y="-44.8945" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="LB3" gate="G$1" x="269.24" y="-22.5425" smashed="yes">
+<attribute name="NAME" x="272.796" y="-27.1145" size="1.778" layer="95" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9161,43 +9235,29 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <segment>
 <wire x1="210.82" y1="-22.86" x2="210.82" y2="-40.64" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="-40.64" x2="210.82" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="GL2" gate="G$1" pin="S"/>
 <wire x1="210.82" y1="-58.42" x2="210.82" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="-40.64" x2="210.82" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <junction x="210.82" y="-40.64"/>
-<pinref part="GL1" gate="G$1" pin="S"/>
 <wire x1="213.36" y1="-58.42" x2="210.82" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="GL3" gate="G$1" pin="S"/>
 <wire x1="210.82" y1="-22.86" x2="213.36" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="210.82" y="-58.42"/>
 </segment>
 <segment>
 <wire x1="233.68" y1="-22.86" x2="233.68" y2="-40.64" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
-<pinref part="RL1" gate="G$1" pin="S"/>
 <wire x1="233.68" y1="-40.64" x2="233.68" y2="-58.42" width="0.1524" layer="91"/>
 <wire x1="233.68" y1="-58.42" x2="233.68" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="-58.42" x2="233.68" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="RL2" gate="G$1" pin="S"/>
 <wire x1="236.22" y1="-40.64" x2="233.68" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="RL3" gate="G$1" pin="S"/>
 <wire x1="236.22" y1="-22.86" x2="233.68" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="233.68" y="-40.64"/>
 <junction x="233.68" y="-58.42"/>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="256.54" y1="-22.86" x2="256.54" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="BL2" gate="G$1" pin="S"/>
-<wire x1="256.54" y1="-40.64" x2="256.54" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="256.54" y1="-58.42" x2="256.54" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="259.08" y1="-40.64" x2="256.54" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="256.54" y="-40.64"/>
-<pinref part="BL3" gate="G$1" pin="S"/>
+<wire x1="256.54" y1="-22.86" x2="256.54" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="-22.86" x2="259.08" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="BL1" gate="G$1" pin="S"/>
-<wire x1="259.08" y1="-58.42" x2="256.54" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-12.7" y1="-15.24" x2="7.62" y2="-15.24" width="0.1524" layer="91"/>
@@ -9263,7 +9323,11 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <segment>
 <wire x1="243.84" y1="-83.82" x2="243.84" y2="-66.04" width="0.1524" layer="91"/>
 <label x="243.84" y="-81.28" size="1.778" layer="95" rot="R90"/>
-<pinref part="RL1" gate="G$1" pin="C"/>
+<wire x1="243.84" y1="-66.04" x2="246.38" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-66.04" x2="246.38" y2="-63.1825" width="0.1524" layer="91"/>
+<pinref part="LR1" gate="G$1" pin="C"/>
+<wire x1="246.38" y1="-63.1825" x2="246.38" y2="-63.5" width="0.1524" layer="91"/>
+<junction x="246.38" y="-63.1825"/>
 </segment>
 <segment>
 <wire x1="180.34" y1="17.78" x2="180.34" y2="2.54" width="0.1524" layer="91"/>
@@ -9285,14 +9349,22 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <segment>
 <wire x1="266.7" y1="-83.82" x2="266.7" y2="-66.04" width="0.1524" layer="91"/>
 <label x="266.7" y="-81.28" size="1.778" layer="95" rot="R90"/>
-<pinref part="BL1" gate="G$1" pin="C"/>
+<wire x1="269.24" y1="-63.5" x2="269.24" y2="-63.1825" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-63.1825" x2="269.24" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-66.04" x2="266.7" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="LB1" gate="G$1" pin="C"/>
+<junction x="269.24" y="-63.1825"/>
 </segment>
 </net>
 <net name="P_GREEN" class="0">
 <segment>
 <wire x1="220.98" y1="-83.82" x2="220.98" y2="-66.04" width="0.1524" layer="91"/>
 <label x="220.98" y="-81.28" size="1.778" layer="95" rot="R90"/>
-<pinref part="GL1" gate="G$1" pin="C"/>
+<wire x1="223.52" y1="-63.5" x2="223.52" y2="-63.1825" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-63.1825" x2="223.52" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-66.04" x2="220.98" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="LG1" gate="G$1" pin="C"/>
+<junction x="223.52" y="-63.1825"/>
 </segment>
 <segment>
 <wire x1="195.58" y1="17.78" x2="195.58" y2="2.54" width="0.1524" layer="91"/>
@@ -9380,15 +9452,27 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 <pinref part="SUPPLY1" gate="G$1" pin="12V"/>
 <wire x1="220.98" y1="-15.24" x2="220.98" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="-15.24" x2="243.84" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="GL3" gate="G$1" pin="A"/>
 <wire x1="243.84" y1="-15.24" x2="266.7" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="220.98" y1="-15.24" x2="220.98" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="RL3" gate="G$1" pin="A"/>
 <wire x1="243.84" y1="-15.24" x2="243.84" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="BL3" gate="G$1" pin="A"/>
 <wire x1="266.7" y1="-15.24" x2="266.7" y2="-17.78" width="0.1524" layer="91"/>
 <junction x="243.84" y="-15.24"/>
 <junction x="220.98" y="-15.24"/>
+<wire x1="223.52" y1="-20.32" x2="223.52" y2="-20.0025" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-20.0025" x2="223.52" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-17.78" x2="220.98" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="LG3" gate="G$1" pin="A"/>
+<junction x="223.52" y="-20.0025"/>
+<wire x1="243.84" y1="-17.78" x2="246.38" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-17.78" x2="246.38" y2="-20.0025" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-20.0025" x2="246.38" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="-17.78" x2="269.24" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-17.78" x2="269.24" y2="-20.0025" width="0.1524" layer="91"/>
+<pinref part="LR3" gate="G$1" pin="A"/>
+<junction x="246.38" y="-20.0025"/>
+<pinref part="LB3" gate="G$1" pin="A"/>
+<wire x1="269.24" y1="-20.0025" x2="269.24" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="269.24" y="-20.0025"/>
 </segment>
 <segment>
 <pinref part="SUPPLY4" gate="G$1" pin="12V"/>
@@ -9689,50 +9773,99 @@ Standard 10-pin dual row 0.1" header. Commonly used with AVR-ISP. Use with Spark
 </net>
 <net name="G2" class="0">
 <segment>
-<pinref part="GL1" gate="G$1" pin="A"/>
-<pinref part="GL2" gate="G$1" pin="C"/>
 <wire x1="220.98" y1="-53.34" x2="220.98" y2="-48.26" width="0.1524" layer="91"/>
 <label x="220.98" y="-53.34" size="1.778" layer="95" rot="R90"/>
+<wire x1="223.52" y1="-45.72" x2="223.52" y2="-45.4025" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-45.4025" x2="223.52" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-48.26" x2="220.98" y2="-48.26" width="0.1524" layer="91"/>
+<pinref part="LG2" gate="G$1" pin="C"/>
+<junction x="223.52" y="-45.4025"/>
+<wire x1="220.98" y1="-53.34" x2="223.52" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-53.34" x2="223.52" y2="-55.5625" width="0.1524" layer="91"/>
+<pinref part="LG1" gate="G$1" pin="A"/>
+<wire x1="223.52" y1="-55.5625" x2="223.52" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="223.52" y="-55.5625"/>
 </segment>
 </net>
 <net name="G1" class="0">
 <segment>
-<pinref part="GL2" gate="G$1" pin="A"/>
-<pinref part="GL3" gate="G$1" pin="C"/>
-<wire x1="220.98" y1="-35.56" x2="220.98" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-35.56" x2="220.98" y2="-33.02" width="0.1524" layer="91"/>
 <label x="220.98" y="-35.56" size="1.778" layer="95" rot="R90"/>
+<wire x1="220.98" y1="-33.02" x2="220.98" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="-33.02" x2="223.52" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-33.02" x2="223.52" y2="-27.6225" width="0.1524" layer="91"/>
+<pinref part="LG3" gate="G$1" pin="C"/>
+<wire x1="223.52" y1="-27.6225" x2="223.52" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="223.52" y="-27.6225"/>
+<wire x1="220.98" y1="-35.56" x2="223.52" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-35.56" x2="223.52" y2="-37.7825" width="0.1524" layer="91"/>
+<pinref part="LG2" gate="G$1" pin="A"/>
+<wire x1="223.52" y1="-37.7825" x2="223.52" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="223.52" y="-37.7825"/>
 </segment>
 </net>
 <net name="R1" class="0">
 <segment>
-<pinref part="RL3" gate="G$1" pin="C"/>
-<pinref part="RL2" gate="G$1" pin="A"/>
 <wire x1="243.84" y1="-30.48" x2="243.84" y2="-35.56" width="0.1524" layer="91"/>
 <label x="243.84" y="-35.56" size="1.778" layer="95" rot="R90"/>
+<wire x1="246.38" y1="-27.94" x2="246.38" y2="-27.6225" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-27.6225" x2="246.38" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-30.48" x2="243.84" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-35.56" x2="246.38" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-35.56" x2="246.38" y2="-37.7825" width="0.1524" layer="91"/>
+<pinref part="LR3" gate="G$1" pin="C"/>
+<junction x="246.38" y="-27.6225"/>
+<pinref part="LR2" gate="G$1" pin="A"/>
+<wire x1="246.38" y1="-37.7825" x2="246.38" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="246.38" y="-37.7825"/>
 </segment>
 </net>
 <net name="B1" class="0">
 <segment>
-<pinref part="BL3" gate="G$1" pin="C"/>
-<pinref part="BL2" gate="G$1" pin="A"/>
 <wire x1="266.7" y1="-30.48" x2="266.7" y2="-35.56" width="0.1524" layer="91"/>
 <label x="266.7" y="-35.56" size="1.778" layer="95" rot="R90"/>
+<wire x1="269.24" y1="-38.1" x2="269.24" y2="-37.7825" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-37.7825" x2="269.24" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-35.56" x2="266.7" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-27.94" x2="269.24" y2="-27.6225" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-27.6225" x2="269.24" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-30.48" x2="266.7" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="LB2" gate="G$1" pin="A"/>
+<junction x="269.24" y="-37.7825"/>
+<pinref part="LB3" gate="G$1" pin="C"/>
+<junction x="269.24" y="-27.6225"/>
 </segment>
 </net>
 <net name="B2" class="0">
 <segment>
-<pinref part="BL2" gate="G$1" pin="C"/>
-<pinref part="BL1" gate="G$1" pin="A"/>
 <wire x1="266.7" y1="-48.26" x2="266.7" y2="-53.34" width="0.1524" layer="91"/>
 <label x="266.7" y="-53.34" size="1.778" layer="95" rot="R90"/>
+<wire x1="266.7" y1="-53.34" x2="269.24" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-53.34" x2="269.24" y2="-55.5625" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-55.5625" x2="269.24" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="266.7" y1="-48.26" x2="269.24" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="269.24" y1="-48.26" x2="269.24" y2="-45.4025" width="0.1524" layer="91"/>
+<pinref part="LB1" gate="G$1" pin="A"/>
+<junction x="269.24" y="-55.5625"/>
+<pinref part="LB2" gate="G$1" pin="C"/>
+<wire x1="269.24" y1="-45.4025" x2="269.24" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="269.24" y="-45.4025"/>
 </segment>
 </net>
 <net name="R2" class="0">
 <segment>
-<pinref part="RL2" gate="G$1" pin="C"/>
-<pinref part="RL1" gate="G$1" pin="A"/>
 <wire x1="243.84" y1="-48.26" x2="243.84" y2="-53.34" width="0.1524" layer="91"/>
 <label x="243.84" y="-53.34" size="1.778" layer="95" rot="R90"/>
+<wire x1="243.84" y1="-48.26" x2="246.38" y2="-48.26" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-48.26" x2="246.38" y2="-45.4025" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-45.4025" x2="246.38" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="-53.34" x2="246.38" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="-53.34" x2="246.38" y2="-55.5625" width="0.1524" layer="91"/>
+<pinref part="LR2" gate="G$1" pin="C"/>
+<junction x="246.38" y="-45.4025"/>
+<pinref part="LR1" gate="G$1" pin="A"/>
+<wire x1="246.38" y1="-55.5625" x2="246.38" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="246.38" y="-55.5625"/>
 </segment>
 </net>
 </nets>
