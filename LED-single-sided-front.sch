@@ -7930,12 +7930,12 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
 <part name="SV1" library="con-lstb" deviceset="MA04-1" device=""/>
 <part name="SV2" library="con-lstb" deviceset="MA04-1" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="0204/7" value="0"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="0204/7" value="0"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="0204/7" value="0"/>
-<part name="R4" library="rcl" deviceset="R-EU_" device="0204/7" value="0"/>
-<part name="R5" library="rcl" deviceset="R-EU_" device="0204/7" value="0"/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="0204/7" value="0"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R1206" value="0"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R1206" value="0"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R1206" value="0"/>
+<part name="R4" library="rcl" deviceset="R-EU_" device="R1206" value="0"/>
+<part name="R5" library="rcl" deviceset="R-EU_" device="R1206" value="0"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R1206" value="0"/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="12V" device=""/>
 <part name="H1" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
 <part name="H2" library="holes" deviceset="MOUNT-HOLE" device="3.0"/>
