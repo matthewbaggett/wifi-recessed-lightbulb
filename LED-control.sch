@@ -12515,10 +12515,10 @@ Source: AVX .. aphvc.pdf</description>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value=" "/>
-<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value=" "/>
-<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value=" "/>
-<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value=" "/>
-<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value=" "/>
+<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="10k"/>
+<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="10k"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="10k"/>
+<part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="10k"/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="NO_PACKAGE"/>
 <part name="PWR" library="SparkFun-LED" deviceset="LED-RED" device="1206" value="RED"/>
 <part name="U1" library="adafruit" deviceset="PCA9685" device=""/>
@@ -12544,26 +12544,27 @@ Source: AVX .. aphvc.pdf</description>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value=" "/>
-<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value=" "/>
+<part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="10k"/>
+<part name="R8" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="10k"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="CONN_05X2" device="SHD"/>
+<part name="R9" library="SparkFun-Resistors" deviceset="RESISTOR" device="1206" value="470"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <wire x1="0" y1="121.92" x2="91.44" y2="121.92" width="0.4064" layer="95"/>
 <wire x1="91.44" y1="121.92" x2="91.44" y2="185.42" width="0.4064" layer="95"/>
-<wire x1="91.44" y1="121.92" x2="91.44" y2="68.58" width="0.4064" layer="95"/>
+<wire x1="91.44" y1="121.92" x2="91.44" y2="78.74" width="0.4064" layer="95"/>
 <wire x1="0" y1="63.5" x2="0" y2="60.96" width="0.4064" layer="95"/>
-<wire x1="91.44" y1="68.58" x2="91.44" y2="27.94" width="0.4064" layer="95"/>
+<wire x1="91.44" y1="78.74" x2="91.44" y2="27.94" width="0.4064" layer="95"/>
 <wire x1="91.44" y1="27.94" x2="0" y2="27.94" width="0.4064" layer="95"/>
-<wire x1="91.44" y1="68.58" x2="144.78" y2="68.58" width="0.4064" layer="95"/>
-<wire x1="144.78" y1="68.58" x2="248.92" y2="68.58" width="0.4064" layer="95"/>
+<wire x1="91.44" y1="78.74" x2="144.78" y2="78.74" width="0.4064" layer="95"/>
+<wire x1="144.78" y1="78.74" x2="246.38" y2="78.74" width="0.4064" layer="95"/>
 <wire x1="91.44" y1="121.92" x2="248.92" y2="121.92" width="0.4064" layer="95"/>
 <text x="2.54" y="177.8" size="3.81" layer="95">Processor</text>
-<text x="93.98" y="60.96" size="3.81" layer="95">Pullups</text>
+<text x="93.98" y="71.12" size="3.81" layer="95">Pullups</text>
 <wire x1="91.44" y1="27.94" x2="91.44" y2="0" width="0.4064" layer="95"/>
-<wire x1="144.78" y1="68.58" x2="144.78" y2="0" width="0.6096" layer="95"/>
+<wire x1="144.78" y1="78.74" x2="144.78" y2="0" width="0.6096" layer="95"/>
 <text x="35.56" y="55.88" size="1.778" layer="95">Diagnostic LEDs + Programming Port</text>
 </plain>
 <instances>
@@ -12615,6 +12616,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="R6" gate="G$1" x="119.38" y="25.4"/>
 <instance part="R8" gate="G$1" x="119.38" y="17.78"/>
 <instance part="J2" gate="G$1" x="205.74" y="91.44"/>
+<instance part="R9" gate="G$1" x="119.38" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -12655,6 +12657,11 @@ Source: AVX .. aphvc.pdf</description>
 <label x="215.9" y="86.36" size="1.27" layer="95" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="10"/>
 </segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="124.46" y1="60.96" x2="137.16" y2="60.96" width="0.1524" layer="91"/>
+<label x="127" y="60.96" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ADC" class="0">
 <segment>
@@ -12683,6 +12690,11 @@ Source: AVX .. aphvc.pdf</description>
 <label x="10.16" y="162.56" size="1.778" layer="95"/>
 <pinref part="U$1" gate="G$1" pin="GPIO16"/>
 <wire x1="22.86" y1="162.56" x2="20.32" y2="162.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="60.96" x2="114.3" y2="60.96" width="0.1524" layer="91"/>
+<label x="104.14" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
